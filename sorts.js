@@ -62,10 +62,9 @@ function quickSort(arrayToSort) {
     return quickSort(left).concat(pivot).concat( quickSort(right) );
 }
 
-console.log( bubbleSort(group1) );
-console.log( bubbleSort(group2) );
-console.log( bubbleSort(group3) );
+// Extra credit 1
+var newArray = group1.concat(group2);
+console.log( bubbleSort(newArray) );
+console.log( quickSort(newArray) );
 
-console.log( quickSort(group1) );
-console.log( quickSort(group2) );
-console.log( quickSort(group3) );
+// Extra credit 2
